@@ -1,7 +1,7 @@
 import interact from "interactjs";
 import { useEffect, useRef } from "react";
 
-export default function FlowerToken({ value, index }: { value: Flower, index: number }) {
+export default function FlowerToken({ index }: { index: number }) {
     const draggableRef = useRef<HTMLDivElement>(null)
 
     interact('.draggable')

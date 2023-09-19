@@ -10,7 +10,7 @@ const slotPositions = [
     { x: 900, y: -400 },
 ]
 
-export default function FlowerSlot({ value, index }: { value: Flower, index: number }) {
+export default function FlowerSlot({ index }: { index: number }) {
     const dropzoneRef = useRef<HTMLDivElement>(null)
 
     interact('.dropzone').dropzone({
@@ -32,8 +32,6 @@ export default function FlowerSlot({ value, index }: { value: Flower, index: num
         },
         ondrop: function (event) {
             event.relatedTarget.style.transform = event.target.style.transform
-            console.log(event.target.getAttribute('data-x'), event.relatedTarget.getAttribute('data-x'));
-
             event.relatedTarget.setAttribute('data-x', `${event.target.getAttribute('data-x')}`)
             event.relatedTarget.setAttribute('data-y', `${event.target.getAttribute('data-y')}`)
         },

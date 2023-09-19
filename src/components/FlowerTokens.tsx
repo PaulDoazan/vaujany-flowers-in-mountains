@@ -6,10 +6,10 @@ export default function FlowerTokens() {
     return (
         <div>
             {flowers.map((el, index) => {
-                return <FlowerSlot key={el.id} value={el} index={index} />
+                return <FlowerSlot key={el.id} index={index} />
             })}
             {flowers.map((el, index) => {
-                return <FlowerToken key={el.id} value={el} index={index} />
+                return <FlowerToken key={el.id} index={index} />
             })}
         </div>
     )
