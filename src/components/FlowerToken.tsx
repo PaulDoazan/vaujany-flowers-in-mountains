@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 export default function FlowerToken({ index }: { index: number }) {
     const draggableRef = useRef<HTMLDivElement>(null)
 
+
     useEffect(() => {
         if (draggableRef.current) {
             draggableRef.current.style.transform = 'translate(' + (index * 100) + 'px, ' + '-100px)'
