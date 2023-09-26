@@ -1,4 +1,4 @@
-import flowers from '../assets/flowers.json'
+import flowers from '../../assets/flowers.json'
 import FlowerSlot from './FlowerSlot'
 import FlowerToken from './FlowerToken'
 
